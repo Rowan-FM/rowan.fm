@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="main-app">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=8; IE=EDGE">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+            html, body {
+                background-color: #000 !important;
+                color: #57FF57 !important;
+                font-family: "consolas", "monaco", monospace !important;
+            }
+
+            pre {
+                animation-duration: 0.01s;
+                animation-name: textflicker;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                margin: 0px;
+                text-align: center;
+                text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #57FF57;
+                white-space: pre;
+            }
+
+            .content {
+                background-color: #000 !important;
+                border: 1px solid #57FF57 !important;
+                max-width: 100% !important;
+                min-width: max-content !important;
+            }
+
+            .prompt {
+                background-color: transparent !important;
+                flex-direction: column;
+            }
+
+            #err_str {
+                background-color: #000;
+                border: 1px solid #57FF57 !important;
+                color: #57FF57 !important;
+                margin-bottom: 1.5em;
+            }
+
+            @keyframes textflicker {
+                from {
+                    text-shadow: 1px 0 0 #ea36af, -2px 0 0 #57FF57;
+                }
+
+                to {
+                    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #57FF57;
+                }
+            }
+        </style>
+        <title>ROWAN MOORE</title>
+    </head>
+    <body>
+        <div class="content with-header">
+            <div class="sub-content"> <br>
+                <pre>
+██▀███   ▒█████   █     █░ ▄▄▄       ███▄    █ 
+▓██ ▒ ██▒▒██▒  ██▒▓█░ █ ░█░▒████▄     ██ ▀█   █ 
+▓██ ░▄█ ▒▒██░  ██▒▒█░ █ ░█ ▒██  ▀█▄  ▓██  ▀█ ██▒
+▒██▀▀█▄  ▒██   ██░░█░ █ ░█ ░██▄▄▄▄██ ▓██▒  ▐▌██▒
+░██▓ ▒██▒░ ████▓▒░░░██▒██▓  ▓█   ▓██▒▒██░   ▓██░
+░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▓░▒ ▒   ▒▒   ▓▒█░░ ▒░   ▒ ▒ 
+  ░▒ ░ ▒░  ░ ▒ ▒░   ▒ ░ ░    ▒   ▒▒ ░░ ░░   ░ ▒░
+  ░░   ░ ░ ░ ░ ▒    ░   ░    ░   ▒      ░   ░ ░ 
+   ░         ░ ░      ░          ░  ░         ░ 
+                                                
+ ███▄ ▄███▓ ▒█████   ▒█████   ██▀███  ▓█████    
+▓██▒▀█▀ ██▒▒██▒  ██▒▒██▒  ██▒▓██ ▒ ██▒▓█   ▀    
+▓██    ▓██░▒██░  ██▒▒██░  ██▒▓██ ░▄█ ▒▒███      
+▒██    ▒██ ▒██   ██░▒██   ██░▒██▀▀█▄  ▒▓█  ▄    
+▒██▒   ░██▒░ ████▓▒░░ ████▓▒░░██▓ ▒██▒░▒████▒   
+░ ▒░   ░  ░░ ▒░▒░▒░ ░ ▒░▒░▒░ ░ ▒▓ ░▒▓░░░ ▒░ ░   
+░  ░      ░  ░ ▒ ▒░   ░ ▒ ▒░   ░▒ ░ ▒░ ░ ░  ░   
+░      ░   ░ ░ ░ ▒  ░ ░ ░ ▒    ░░   ░    ░      
+       ░       ░ ░      ░ ░     ░        ░  ░   
+                </pre>
+            </div>
+    </body>
+</html>
