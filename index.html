@@ -19,18 +19,25 @@
                 to { text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 5px #57ff57; }
             }
 
-            .rm-title {
+            [class^="rm-title"] {
                 animation-direction: alternate;
                 animation-duration: 0.9s;
                 animation-iteration-count: infinite;
                 animation-name: pulse;
                 animation-timing-function: linear;
                 color: #57ff57;
-                font-size: 13px;
                 margin: 0px;
                 text-align: center;
                 text-shadow: 1px 0px 1px #ea36af, -2px 0px 1px #57FF57;
                 white-space: pre;
+            }
+
+            .rm-title-large {
+                font-size: 13px;
+            }
+
+            .rm-title-small {
+                font-size: 11px;
             }
         </style>
     </head>
@@ -39,7 +46,7 @@
             <div class="container col-xxl-8 px-2 py-5">
                 <div class="row g-2 py-5">
                     <div class="col-10 col-lg-6 mx-auto">
-                        <pre class="rm-title d-none d-sm-block lh-1 overflow-hidden">
+                        <pre class="rm-title-large d-none d-sm-block lh-1 overflow-hidden">
 ███████████                                                
 ░░███░░░░░███                                               
  ░███    ░███   ██████  █████ ███ █████  ██████   ████████  
@@ -58,7 +65,7 @@
  █████     █████░░██████ ░░██████  █████    ░░██████        
 ░░░░░     ░░░░░  ░░░░░░   ░░░░░░  ░░░░░      ░░░░░░         
                         </pre>
-                        <pre class="rm-title d-block d-sm-none lh-1 overflow-hidden">
+                        <pre class="rm-title-small d-block d-sm-none lh-1 overflow-hidden">
 ██████╗  ██████╗ ██╗    ██╗ █████╗ ███╗   ██╗
 ██╔══██╗██╔═══██╗██║    ██║██╔══██╗████╗  ██║
 ██████╔╝██║   ██║██║ █╗ ██║███████║██╔██╗ ██║
