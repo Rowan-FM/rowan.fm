@@ -1,82 +1,86 @@
 <!DOCTYPE html>
-<html lang="en" class="main-app">
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=8; IE=EDGE">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Rowan Moore">
+        <meta name="description" content="Rowan Moore - Information Technology Specialist">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style type="text/css">
-            html, body {
-                background-color: #000 !important;
-                color: #57FF57 !important;
-                font-family: "consolas", "monaco", monospace !important;
+        <meta property="og:description" content="Rowan Moore - Information Technology Specialist">
+        <meta property="og:site_name" content="Rowan Moore - Information Technology Specialist">
+        <meta property="og:title" content="Rowan Moore - Information Technology Specialist">
+        <meta property="og:url" content="https://rowan.fm">
+        <link rel="icon" href="./img/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="stylesheet" href="./css/bootstrap-5.3.5.min.css">
+        <title>Rowan Moore - Information Technology Specialist</title>
+        <style>
+            @keyframes pulse {
+                from { text-shadow: 1px 0px 0px #ea36af, -2px 0px 0px #57ff57; }
+                to { text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 5px #57ff57; }
             }
 
-            pre {
-                animation-duration: 0.01s;
-                animation-name: textflicker;
-                animation-iteration-count: infinite;
+            .rm-title {
                 animation-direction: alternate;
+                animation-duration: 0.9s;
+                animation-iteration-count: infinite;
+                animation-name: pulse;
+                animation-timing-function: linear;
+                color: #57ff57;
+                font-size: 13px;
                 margin: 0px;
                 text-align: center;
-                text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #57FF57;
+                text-shadow: 1px 0px 1px #ea36af, -2px 0px 1px #57FF57;
                 white-space: pre;
             }
-
-            .content {
-                background-color: #000 !important;
-                border: 1px solid #57FF57 !important;
-                max-width: 100% !important;
-                min-width: max-content !important;
-            }
-
-            .prompt {
-                background-color: transparent !important;
-                flex-direction: column;
-            }
-
-            #err_str {
-                background-color: #000;
-                border: 1px solid #57FF57 !important;
-                color: #57FF57 !important;
-                margin-bottom: 1.5em;
-            }
-
-            @keyframes textflicker {
-                from {
-                    text-shadow: 1px 0 0 #ea36af, -2px 0 0 #57FF57;
-                }
-
-                to {
-                    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #57FF57;
-                }
-            }
         </style>
-        <title>ROWAN MOORE</title>
     </head>
-    <body>
-        <div class="content with-header">
-            <div class="sub-content"> <br>
-                <pre>
-██▀███   ▒█████   █     █░ ▄▄▄       ███▄    █ 
-▓██ ▒ ██▒▒██▒  ██▒▓█░ █ ░█░▒████▄     ██ ▀█   █ 
-▓██ ░▄█ ▒▒██░  ██▒▒█░ █ ░█ ▒██  ▀█▄  ▓██  ▀█ ██▒
-▒██▀▀█▄  ▒██   ██░░█░ █ ░█ ░██▄▄▄▄██ ▓██▒  ▐▌██▒
-░██▓ ▒██▒░ ████▓▒░░░██▒██▓  ▓█   ▓██▒▒██░   ▓██░
-░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▓░▒ ▒   ▒▒   ▓▒█░░ ▒░   ▒ ▒ 
-  ░▒ ░ ▒░  ░ ▒ ▒░   ▒ ░ ░    ▒   ▒▒ ░░ ░░   ░ ▒░
-  ░░   ░ ░ ░ ░ ▒    ░   ░    ░   ▒      ░   ░ ░ 
-   ░         ░ ░      ░          ░  ░         ░ 
-                                                
- ███▄ ▄███▓ ▒█████   ▒█████   ██▀███  ▓█████    
-▓██▒▀█▀ ██▒▒██▒  ██▒▒██▒  ██▒▓██ ▒ ██▒▓█   ▀    
-▓██    ▓██░▒██░  ██▒▒██░  ██▒▓██ ░▄█ ▒▒███      
-▒██    ▒██ ▒██   ██░▒██   ██░▒██▀▀█▄  ▒▓█  ▄    
-▒██▒   ░██▒░ ████▓▒░░ ████▓▒░░██▓ ▒██▒░▒████▒   
-░ ▒░   ░  ░░ ▒░▒░▒░ ░ ▒░▒░▒░ ░ ▒▓ ░▒▓░░░ ▒░ ░   
-░  ░      ░  ░ ▒ ▒░   ░ ▒ ▒░   ░▒ ░ ▒░ ░ ░  ░   
-░      ░   ░ ░ ░ ▒  ░ ░ ░ ▒    ░░   ░    ░      
-       ░       ░ ░      ░ ░     ░        ░  ░   
-                </pre>
+    <body class="bg-black">
+        <main>
+            <div class="container col-xxl-8 px-2 py-5">
+                <div class="row g-2 py-5">
+                    <div class="col-10 col-lg-6 mx-auto">
+                        <pre class="rm-title d-none d-sm-block lh-1 overflow-hidden">
+███████████                                                
+░░███░░░░░███                                               
+ ░███    ░███   ██████  █████ ███ █████  ██████   ████████  
+ ░██████████   ███░░███░░███ ░███░░███  ░░░░░███ ░░███░░███ 
+ ░███░░░░░███ ░███ ░███ ░███ ░███ ░███   ███████  ░███ ░███ 
+ ░███    ░███ ░███ ░███ ░░███████████   ███░░███  ░███ ░███ 
+ █████   █████░░██████   ░░████░████   ░░████████ ████ █████
+░░░░░   ░░░░░  ░░░░░░     ░░░░ ░░░░     ░░░░░░░░ ░░░░ ░░░░░ 
+                                                            
+ ██████   ██████                                            
+░░██████ ██████                                             
+ ░███░█████░███   ██████   ██████  ████████   ██████        
+ ░███░░███ ░███  ███░░███ ███░░███░░███░░███ ███░░███       
+ ░███ ░░░  ░███ ░███ ░███░███ ░███ ░███ ░░░ ░███████        
+ ░███      ░███ ░███ ░███░███ ░███ ░███     ░███░░░         
+ █████     █████░░██████ ░░██████  █████    ░░██████        
+░░░░░     ░░░░░  ░░░░░░   ░░░░░░  ░░░░░      ░░░░░░         
+                        </pre>
+                        <pre class="rm-title d-block d-sm-none lh-1 overflow-hidden">
+██████╗  ██████╗ ██╗    ██╗ █████╗ ███╗   ██╗
+██╔══██╗██╔═══██╗██║    ██║██╔══██╗████╗  ██║
+██████╔╝██║   ██║██║ █╗ ██║███████║██╔██╗ ██║
+██╔══██╗██║   ██║██║███╗██║██╔══██║██║╚██╗██║
+██║  ██║╚██████╔╝╚███╔███╔╝██║  ██║██║ ╚████║
+╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝
+                                             
+███╗   ███╗ ██████╗  ██████╗ ██████╗ ███████╗
+████╗ ████║██╔═══██╗██╔═══██╗██╔══██╗██╔════╝
+██╔████╔██║██║   ██║██║   ██║██████╔╝█████╗  
+██║╚██╔╝██║██║   ██║██║   ██║██╔══██╗██╔══╝  
+██║ ╚═╝ ██║╚██████╔╝╚██████╔╝██║  ██║███████╗
+╚═╝     ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝
+                        </pre>
+                    </div>
+                    <div class="col-lg-6 text-center text-sm-start">
+                        <h1 class="display-5 fw-bold lh-1 mb-3 text-light">Senior Information Technology Specialist</h1>
+                        <p class="lead text-light">G'day! My name is Rowan Moore and I am an Senior Information Technology Specialist located in Perth, Western Australia. I have almost two decades of industry experience working with an extremely broad range of technologies, systems and products.</p>
+                    </div>
+                </div>
             </div>
-    </body>
+        </main>
+        <script defer src="./js/bootstrap-5.3.5.bundle.min.js"></script>
+    </body> 
 </html>
