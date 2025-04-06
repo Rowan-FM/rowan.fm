@@ -15,48 +15,61 @@
         <link rel="apple-touch-icon" href="./img/favicon-180x180.png" sizes="180x180">
         <link rel="icon" href="./img/favicon-16x16.png" sizes="16x16" type="image/png">
         <link rel="icon" href="./img/favicon-32x32.png" sizes="32x32" type="image/png">
-        <link rel="stylesheet" href="./css/bootstrap-5.3.5.min.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
         <title>Rowan Moore - Senior Systems Engineer</title>
         <style>
+            :root {
+                --rm-title-colour: #57ff57;
+                --rm-title-glow: #57ff57;
+                --rm-title-shadow: #ea36af;
+
+                --rm-title-lg: 13px;
+                --rm-title-sm: 11px;
+            }
+
+            /* Mononoki (Bold) */
             @font-face{
                 font-family: 'Mononoki';
-                font-weight: bold;
                 font-style: normal;
                 font-stretch: normal;
+                font-weight: bold;
                 src: url('./fonts/mononoki-Bold.otf') format('opentype'),
                      url('./fonts/mononoki-Bold.ttf') format('truetype');
             }
 
+            /* Mononoki (Bold+Italic) */
             @font-face{
                 font-family: 'Mononoki';
-                font-weight: bold;
                 font-style: italic;
                 font-stretch: normal;
+                font-weight: bold;
                 src: url('./fonts/mononoki-BoldItalic.otf') format('opentype'),
                      url('./fonts/mononoki-BoldItalic.ttf') format('truetype');
             }
 
+            /* Mononoki (Italic) */
             @font-face{
                 font-family: 'Mononoki';
-                font-weight: normal;
                 font-style: italic;
                 font-stretch: normal;
+                font-weight: normal;
                 src: url('./fonts/mononoki-Italic.otf') format('opentype'),
                      url('./fonts/mononoki-Italic.ttf') format('truetype');
             }
 
+            /* Mononoki (Regular) */
             @font-face{
                 font-family: 'Mononoki';
-                font-weight: normal;
                 font-style: normal;
                 font-stretch: normal;
+                font-weight: normal;
                 src: url('./fonts/mononoki-Regular.otf') format('opentype'),
                      url('./fonts/mononoki-Regular.ttf') format('truetype');
             }
 
             @keyframes pulse {
-                from { text-shadow: 1px 0px 0px #ea36af, -2px 0px 0px #57ff57; }
-                to { text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 5px #57ff57; }
+                from { text-shadow: 1px 0px 0px var(--rm-title-shadow), -2px 0px 0px var(--rm-title-glow); }
+                to { text-shadow: 2px 0.5px 2px var(--rm-title-shadow), -1px -0.5px 5px var(--rm-title-glow); }
             }
 
             [class^="rm-title"] {
@@ -65,21 +78,16 @@
                 animation-iteration-count: infinite;
                 animation-name: pulse;
                 animation-timing-function: linear;
-                color: #57ff57;
+                color: var(--rm-title-colour);
                 font-family: 'Mononoki';
                 margin: 0px;
                 text-align: center;
-                text-shadow: 1px 0px 0px #ea36af, -2px 0px 0px #57ff57;
+                text-shadow: 1px 0px 0px var(--rm-title-shadow), -2px 0px 0px var(--rm-title-glow);
                 white-space: pre;
             }
 
-            .rm-title-large {
-                font-size: 13px;
-            }
-
-            .rm-title-small {
-                font-size: 11px;
-            }
+            .rm-title-lg { font-size: var(--rm-title-lg); }
+            .rm-title-sm { font-size: var(--rm-title-sm); }
         </style>
     </head>
     <!-- Google tag (gtag.js) -->
@@ -90,12 +98,12 @@
         gtag('js', new Date());
         gtag('config', 'G-SF38J2BW2T');
     </script>
-    <body class="bg-black">
+    <body class="bg-black py-5">
         <main>
-            <div class="container col-xxl-8 px-2 py-5">
+            <div class="container col-xxl-8 px-2">
                 <div class="row g-2 py-5">
                     <div class="col-lg-6 mx-auto">
-                        <pre class="rm-title-large d-none d-sm-block lh-1 overflow-hidden">
+                        <pre class="rm-title-lg d-none d-sm-block d-print-none lh-1 overflow-hidden">
 ███████████                                                
 ░░███░░░░░███                                               
  ░███    ░███   ██████  █████ ███ █████  ██████   ████████  
@@ -114,7 +122,7 @@
  █████     █████░░██████ ░░██████  █████    ░░██████        
 ░░░░░     ░░░░░  ░░░░░░   ░░░░░░  ░░░░░      ░░░░░░         
                         </pre>
-                        <pre class="rm-title-small d-block d-sm-none lh-1 overflow-hidden">
+                        <pre class="rm-title-sm d-block d-sm-none d-print-none lh-1 overflow-hidden">
 ██████╗  ██████╗ ██╗    ██╗ █████╗ ███╗   ██╗
 ██╔══██╗██╔═══██╗██║    ██║██╔══██╗████╗  ██║
 ██████╔╝██║   ██║██║ █╗ ██║███████║██╔██╗ ██║
@@ -135,8 +143,11 @@
                         <p class="lead text-light">G'day! My name is Rowan Moore and I am an Senior Systems Engineer located in Perth, Western Australia. I have almost two decades of industry experience working with an extremely broad range of technologies, systems and products.</p>
                     </div>
                 </div>
+                <footer class="pt-3 mt-4 border-top border-dark-subtle">
+                    <p class="text-white-50">© 2025 Rowan Moore. View on <a class="link-primary" href="https://github.com/Rowan-FM/rowan.fm" target="_blank">GitHub</a>.</p>
+                </footer>
             </div>
         </main>
-        <script defer src="./js/bootstrap-5.3.5.bundle.min.js"></script>
+        <script defer src="./js/bootstrap.bundle.min.js"></script>
     </body> 
 </html>
