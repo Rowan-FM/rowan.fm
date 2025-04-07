@@ -1,5 +1,7 @@
 # Personal Website
 
+[![pages-build-deployment](https://github.com/Rowan-FM/rowan.fm/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/Rowan-FM/rowan.fm/actions/workflows/pages/pages-build-deployment)
+
 ## Overview
 
 This is my personal website created for the purpose of professional promotion. It is a single-page static HTML site built with the [Bootstrap](https://getbootstrap.com/) front-end toolkit and published to [GitHub Pages](https://pages.github.com/) using a custom domain (<https://rowan.fm/>).
