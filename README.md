@@ -8,5 +8,5 @@ This is my personal website created for the purpose of professional promotion. I
 
 ## Third-Party Resources Used
 
-- [Bootstrap](https://getbootstrap.com/) (v5.3.5): front-end toolkit used for layout and styling, ensures consistent and responsive layout rendering across all devices.
+- [Bootstrap](https://getbootstrap.com/) (v5.3.7): front-end toolkit used for layout and styling, ensures consistent and responsive layout rendering across all devices.
 - [mononoki](https://madmalik.github.io/mononoki/): custom monospace font created by [Matthias Tellen](https://github.com/madmalik), chosen for aesthetics and to avoid rendering issues related to poor-quality monospace system fonts on Android.
